@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Flashcards</title>
+    <link rel="stylesheet" href="flashcards-styles.css">
+    <script defer src="flashcards-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Biology Flashcards</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Bar -->
+        <section id="search-bar">
+            <input type="text" id="deck-search" placeholder="🔍 Search Flashcard Decks...">
+        </section>
+
+        <!-- Flashcard Decks -->
+        <section id="flashcard-decks">
+            <div class="deck-list">
+                <div class="deck" data-name="biology-ch1">
+                    <h3>Biology Ch. 1</h3>
+                    <button class="view-deck-btn" data-deck="biology-ch1">View Deck</button>
+                </div>
+                <div class="deck" data-name="biology-ch2">
+                    <h3>Biology Ch. 2</h3>
+                    <button class="view-deck-btn" data-deck="biology-ch2">View Deck</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flashcard Modal -->
+        <div id="flashcard-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="flashcard">
+                    <div class="card-content front">
+                        <p></p>
+                    </div>
+                    <div class="card-content back">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card-controls">
+                    <button id="prev-card">&larr; Previous</button>
+                    <button id="shuffle-deck">Shuffle</button>
+                    <button id="next-card">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Biology Study Resources</p>
+    </footer>
+</body>
+</html>
